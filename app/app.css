@@ -1,0 +1,148 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  line-height: 1.5;
+  color: #121212;
+}
+
+button {
+  font-size: 1rem;
+  font-family: inherit;
+  border: none;
+  border-radius: 2px;
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.2), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+  background-color: #eee;
+  line-height: 1.5;
+  margin: 0;
+}
+
+button {
+  font-weight: 500;
+}
+
+button:hover {
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.6), 0 1px 2px hsla(0, 0%, 0%, 0.2);
+}
+
+button:active {
+  box-shadow: 0 0px 1px hsla(0, 0%, 0%, 0.4);
+  transform: translateY(1px);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+body {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.page-content {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 75px;
+}
+
+#error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.center {
+  text-align: center;
+}
+
+.scrollable-area {
+  overflow: auto;
+  max-width: 100vw;
+}
+
+.stats-form label {
+  display: block;
+}
+
+.stats-form label span {
+  display: inline-block;
+  min-width: 200px;
+  margin-bottom: 15px;
+}
+
+.stats-form label input,
+.stats-form label select {
+  display: inline-block;
+  min-width: 175px;
+  padding: 5px;
+}
+
+.grid {
+  display: grid;
+}
+
+.entry {
+  position: relative;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+
+.entry img {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.entry .label {
+  z-index: 2;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 14px;
+  color: white;
+  font-family: monospace;
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000,
+    -1px -1px #000, 1px -1px #000, -1px 1px #000;
+}
