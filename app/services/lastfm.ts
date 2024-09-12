@@ -1,7 +1,7 @@
 const baseURL = "https://ws.audioscrobbler.com/2.0/";
 const API_KEY = String(process.env.LASTFM_API_KEY);
 
-if (!API_KEY) {
+if (!process.env.LASTFM_API_KEY) {
   console.warn("LastFM Api Key is not set");
 }
 
